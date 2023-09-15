@@ -1,67 +1,71 @@
+/* share */
+.brt-primary{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+
+}
+/* header */
 .full{
     /* border: 1px solid red; */
     background-color: antiquewhite;
+    padding: 50px 240px;
 }
 .content-1{
-    /* border: 1px solid red; */
-    display: flex;
-}
-
-.h2{
-    padding: 0px 20px;
-    /* border: 1px solid green; */
-    width: 50%;
-}
-.div-flix{
-    /* border: 1px solid green; */
-    width: 50%;
     display: flex;
     justify-content: space-between;
-    
-    padding: 0px 30px;
-    text-align: center;
     align-items: center;
 }
-.div-flix a{
-    text-decoration:none;
+ div > ul{
+    display: flex;
 }
-.hading{
+div > ul > li{
+    list-style: none; 
+    margin: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+div  li  a{text-decoration: none;
+color: #424242;
+}
+.title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+/* baner style */
+.baner-content{
+    max-width: 800px;
     text-align: center;
-    align-items: center;
-    padding: 20px 0px;
+    margin: 0 auto; 
 }
-.pag{
-    text-align: center;
-    align-items: center;
+.baner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
 }
-.brt-primary{
-    background-color: orange;
-    border-radius: 5px;
-    font-size: 20px;
-    text-align: center;
-}
-.baner{
-    /* border: 1px solid red; */
-  width: 100%;
-  margin: 0%;
-  padding: 0px 50px;
-}
-.content-3{
-    border: 1px solid green;
-    display:flex;
-}
-.team{
-    border: 1px solid green;
-    width: 50%;
-    padding: 0px 80px;
-    gap: 20px;}
-    .second-side{
-    width: 50%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+.baner-description{
+    color: #727272;
     text-align: center;
 }
-.team img{
-    gap: 20px;
+.baner img{
+    width:100%;
+    margin-top: 20px;
+}
+/* responsive style */
+@media screen and (max-width:576px){
+    header{
+
+        padding: 20px;
+    } 
+    nav{
+        flex-direction: column;
+    }   
+    nav ul{
+        flex-direction: column;
+    }
 }

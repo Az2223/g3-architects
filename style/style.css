@@ -56,16 +56,56 @@ color: #424242;
     width:100%;
     margin-top: 20px;
 }
+
+/* main style */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+/* teams styles */
+.teams-contaner{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.title-1{
+    color: #727272;
+}
+.title-2{
+  color: #131313;
+}
+.title-3{
+    color:orange;
+}
+
+
+
+
 /* responsive style */
 @media screen and (max-width:576px){
     header{
 
         padding: 20px;
     } 
-    nav{
+    nav
+    {
         flex-direction: column;
     }   
     nav ul{
         flex-direction: column;
+    }
+    .teams-contaner{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
     }
 }
